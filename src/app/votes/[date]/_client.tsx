@@ -41,17 +41,15 @@ export const PageClient = (
       </section>
       <section className='py-16'>
         <div className='max-w-5xl px-4 md:px-8 mx-auto'>
-          <div>
-            <h2 className='text-3xl font-bold'>
-              {`Liste des votes de la session du ${new Intl.DateTimeFormat('fr-FR', {
-                dateStyle: 'long'
-              }).format(props.date)}`}
-            </h2>
-            <div className='pt-12 grid md:grid-cols-2 gap-6'>
-              {props.votes.map(vote => (
-                <VoteTeaser key={vote.id} vote={vote} members={props.members} />
-              ))}
-            </div>
+          <h2 className='text-3xl font-bold'>
+            {`Liste des votes de la session du ${new Intl.DateTimeFormat('fr-FR', {
+              dateStyle: 'long'
+            }).format(props.date)}`}
+          </h2>
+          <div className='pt-8 grid md:grid-cols-2 gap-6'>
+            {props.votes.map(vote => (
+              <VoteTeaser key={vote.id} vote={vote} members={props.members} />
+            ))}
           </div>
         </div>
       </section>

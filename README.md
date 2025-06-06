@@ -1,6 +1,10 @@
 # MP votes
 
+This application visualizes Luxembourg parliamentary votes by mapping each member of parliament, MP’s decision onto their actual seat in the chamber. Using official open data (Oct 2021–Jul 2024) and seat plans from additional sources (chamber website, Wikipedia), it provides a different perspective on parliamentary activity, grouped by party and session. Built with Next.js, TypeScript, and Tailwind, the tool aims to make MPs’ voting behavior more accessible and transparent.
+
 Developed as part of the hackathon [Open Data x Democracy in Action](https://data.public.lu/en/posts/hackathon-open-data-x-democracy-in-action/).
+
+Live demo: https://votes.testsite.lu/
 
 ## Data sources
 
